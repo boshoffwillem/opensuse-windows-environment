@@ -31,6 +31,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+### Configuring LSP Servers
+
+To configure a LSP server for neovim, open neovim and enter the command ```LspInstall <lsp_server>```
+where ```<lsp_server>``` is the name of the server you want to install.
+
+This will show a dialog that installs the server. Once it's done it will show you
+where it installed the server, copy that path and add it to PATH.
+
 ## Add ENV Variables to PATH
 
 Sometimes when you install things that needs to be added to your PATH
